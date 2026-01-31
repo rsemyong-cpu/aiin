@@ -1,0 +1,39 @@
+name: ForloveKeyboard
+options:
+  bundleIdPrefix: com.forlove.keyboard
+  developmentTeam: "" # 如果有 Team ID 可以填写在这个位置
+targets:
+  ForloveHostApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: ForloveHostApp
+      - path: SharedKit
+    settings:
+      base:
+        INFOPLIST_FILE: ForloveHostApp/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.forlove.keyboard
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: ForloveHostApp/ForloveHostApp.entitlements
+        DEVELOPMENT_ASSET_PATHS: '"ForloveHostApp/Preview Content"'
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: 1
+    dependencies:
+      - target: ForloveKeyboardExtension
+
+  ForloveKeyboardExtension:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: ForloveKeyboardExtension
+      - path: SharedKit
+    settings:
+      base:
+        INFOPLIST_FILE: ForloveKeyboardExtension/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.forlove.keyboard.keyboardextension
+        CODE_SIGN_ENTITLEMENTS: ForloveKeyboardExtension/ForloveKeyboardExtension.entitlements
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: 1
+        SKIP_INSTALL: YES

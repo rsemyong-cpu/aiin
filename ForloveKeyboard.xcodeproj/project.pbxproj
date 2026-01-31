@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B30DC34D17DBCE0EEA2E32 /* PromptTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF22D48110576C993E9E22 /* PromptTemplates.swift */; };
+		07CEA29DEC0791C7299EDDFB /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CE85292AA1BB38184C31D /* UserIdentity.swift */; };
+		1238DF8EE3366C0CB807AB20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD5AE4D9E24EC17449F094B /* HomeViewController.swift */; };
+		12832548E756BA58BD61F340 /* SlotTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC60489A1F17C3CCB6DDCA /* SlotTabsView.swift */; };
+		131E2465086AD520739CEFF5 /* CandidateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A9C7A07F4C147EA79F3EB4 /* CandidateListView.swift */; };
+		1554EDC926E8762BA89F2016 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E471916FFA8B32654D74AC1 /* Debounce.swift */; };
+		17093EC3D51D9C576CA75C1B /* QuickToolsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0882DCC5718190D901CBDEC /* QuickToolsRowView.swift */; };
+		1835D634949769D200CE5237 /* GenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F5335CED82E01B16AFC5D /* GenSpec.swift */; };
+		1DEA386A6C601CA3733D5134 /* IdentitySettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340DA3BA7EA3AABF168724F1 /* IdentitySettingsViewController.swift */; };
+		22E18BF44355EC2C14C9D24D /* StyleSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183F53D68B4E84B72BDA5792 /* StyleSettingsViewController.swift */; };
+		24681A74B32630F93F641751 /* AppGroupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05D949858AF7867E86F7A1 /* AppGroupStore.swift */; };
+		32D3AB51984F26CECF0207B3 /* KeyboardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D96982350E552EEA9728D2 /* KeyboardState.swift */; };
+		364E67370609CD43637F4723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19AA40C106B3953C129C6755 /* Assets.xcassets */; };
+		36935C43DF0C1EF593C42A04 /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F6F64652B029D7E090F24 /* PromptBuilder.swift */; };
+		3849185662E0DC18ABF46003 /* SharedSettingsReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519853EB63259FDDD73CBF35 /* SharedSettingsReader.swift */; };
+		400E3D7C0E31B53C33906DD0 /* StyleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3C5D9A8D45BE6C0362D8F /* StyleProfile.swift */; };
+		41ECB15CDB28A1FF18F5BA15 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC38E7E23FA1106F7352240E /* SettingsService.swift */; };
+		44AD81BD7A45FC97EFB125AB /* PromptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70E1BB1FB07A85A13BC685 /* PromptEngine.swift */; };
+		4AABE8E277CD6FA9A3D5A2FA /* SafetyRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7825F3E3701636799EC0CFD /* SafetyRules.swift */; };
+		4CA74943C65AECE38CED1279 /* KeyboardStatusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA9567CEA5BAB2E586B96D /* KeyboardStatusCardView.swift */; };
+		4CCB3FAA4559FAC9F319734A /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BCE9A6BED3276A7D1C4324 /* EmptyStateView.swift */; };
+		538432F2C9B190003CD0AE90 /* ClipboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F6FE70C39149E2D5FD4F47 /* ClipboardService.swift */; };
+		54BD41531E960DEFA86492E1 /* CategorySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B99A4AB7BD9CDEF4E30674 /* CategorySlot.swift */; };
+		5DFAD88F8A2ECB0ED5EF5891 /* SceneTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA65C36442F735CC36C164B /* SceneTabsView.swift */; };
+		5F132DDE2176FAA49B6484B5 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1FAAE23077C2991651661 /* PermissionService.swift */; };
+		64A0AC4AF5501F74DCD38CF1 /* UserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518CE85292AA1BB38184C31D /* UserIdentity.swift */; };
+		66C761FF979D95EF25D66928 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E471916FFA8B32654D74AC1 /* Debounce.swift */; };
+		671C7A35564B0FC1E025C162 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F04B2235EF4DF888D82D2F4 /* FeatureFlags.swift */; };
+		695D2DBBA6145D9D7E8C92B1 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74C5F494B330F576822FF5 /* DesignSystem.swift */; };
+		7C9F255666D7A7D2BA27B017 /* PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028F6F64652B029D7E090F24 /* PromptBuilder.swift */; };
+		7DF54C8530F7329C750D1A31 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D74C5F494B330F576822FF5 /* DesignSystem.swift */; };
+		8517FA5A14B19F053EF5DCDC /* ExtensionNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF84903B533CDC517E96A01E /* ExtensionNetworkClient.swift */; };
+		8BE0630C3814A09369039A04 /* CompactCandidateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A674A33DBB8BD8904548A20E /* CompactCandidateCardView.swift */; };
+		932B823B89A9DF73DDC31F7B /* FullAccessChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E2CB9334CD218738DB563D /* FullAccessChecker.swift */; };
+		9925BEB174D4B38853C76EB7 /* SafetyRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7825F3E3701636799EC0CFD /* SafetyRules.swift */; };
+		9DCD77DFDB382A738E59C7D4 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6AC7A9E1111D84C0397EB /* Candidate.swift */; };
+		9FFE7FC314DE3167D01EE54C /* CategorySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B99A4AB7BD9CDEF4E30674 /* CategorySlot.swift */; };
+		AEC6B4EFA82E7DD0350B18C5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB347D24B907D7A978D8BB /* KeyboardViewController.swift */; };
+		B0890862B6C188769B1CC1C2 /* ForloveKeyboardExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EB5D45291394949C4DE8412D /* ForloveKeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B13DD2E320C33CCD318C942B /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F04B2235EF4DF888D82D2F4 /* FeatureFlags.swift */; };
+		B28D3C3A2B70D6D819DC79C0 /* AppGroupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05D949858AF7867E86F7A1 /* AppGroupStore.swift */; };
+		B3A0980BF88E950BC3DCC884 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B6BD36F353F13B02C6165 /* Keys.swift */; };
+		B8F4443CCA5AFCAC77C6380C /* PromptTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFF22D48110576C993E9E22 /* PromptTemplates.swift */; };
+		C347FDCEDA146FD534BA8498 /* PolishCompareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08A8BE65C1CF196DA16DF98 /* PolishCompareView.swift */; };
+		D86F9E7181E95E75BF2CDE0C /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D9A90C02B674EECB93A36 /* TextUtils.swift */; };
+		D8ECE7DA9F38A0187ECE2D19 /* GenSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F5335CED82E01B16AFC5D /* GenSpec.swift */; };
+		DBF6BCC443182FCCE6D2801C /* SlotConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B402F1CE139EF186204C69 /* SlotConfigurationViewController.swift */; };
+		DEF45678ABCD1234EF901234 /* SlotEditViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF56789ABCD2345EF012345 /* SlotEditViewControllerV2.swift */; };
+		DD33A1556A61DA58DC88D9AE /* PromptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70E1BB1FB07A85A13BC685 /* PromptEngine.swift */; };
+		E03C03449CB58AAE38C3D77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC22F3668EAB86BC2BD6A76 /* AppDelegate.swift */; };
+		EA4AF90800FD080124D3CB8E /* PermissionGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20988F655E12FAB92CC9BAC /* PermissionGuideViewController.swift */; };
+		EA65AD34CF2550687B9129D6 /* TextUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D9A90C02B674EECB93A36 /* TextUtils.swift */; };
+		ED0BC581E1C351DC6A55BDDF /* TopActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6F663DCA31F1E3C1709AE /* TopActionBarView.swift */; };
+		ABCD1234E5678F90ABCDEF12 /* SubCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5678E1234F90ABCDEF34 /* SubCategoryGridView.swift */; };
+		EF1D51017E16CE68D7E8B56A /* CandidateCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0B4A262D410B5D4CAB0D2 /* CandidateCardView.swift */; };
+		F1AA0DE1C26B9BEDEA9A00C2 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642B6BD36F353F13B02C6165 /* Keys.swift */; };
+		F70EC66849C1C2C930261C8A /* KeyboardRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3BAD2C4E84DD867FC1B04 /* KeyboardRootView.swift */; };
+		F8CECA4563DBBCEB8A889AAF /* StyleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A3C5D9A8D45BE6C0362D8F /* StyleProfile.swift */; };
+		FE7891DCB8315F246767D426 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6AC7A9E1111D84C0397EB /* Candidate.swift */; };
+		FF61429EFBFE12062DDABFAA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C2BE1A3A70903A2E46E5B /* OnboardingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		820EFF94155219C598F539D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00AC51314B2F95BF71E35B45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70AEE22C21A7F229A7AEF65;
+			remoteInfo = ForloveKeyboardExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A64BEDA21F44830D43528631 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0890862B6C188769B1CC1C2 /* ForloveKeyboardExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		028F6F64652B029D7E090F24 /* PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptBuilder.swift; sourceTree = "<group>"; };
+		05F3BAD2C4E84DD867FC1B04 /* KeyboardRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardRootView.swift; sourceTree = "<group>"; };
+		17B3DBCF0878BED27327A740 /* ForloveHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForloveHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		183F53D68B4E84B72BDA5792 /* StyleSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleSettingsViewController.swift; sourceTree = "<group>"; };
+		19AA40C106B3953C129C6755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F04B2235EF4DF888D82D2F4 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
+		1FC22F3668EAB86BC2BD6A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31F0B4A262D410B5D4CAB0D2 /* CandidateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateCardView.swift; sourceTree = "<group>"; };
+		340DA3BA7EA3AABF168724F1 /* IdentitySettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentitySettingsViewController.swift; sourceTree = "<group>"; };
+		44B402F1CE139EF186204C69 /* SlotConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotConfigurationViewController.swift; sourceTree = "<group>"; };
+		DEF56789ABCD2345EF012345 /* SlotEditViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotEditViewControllerV2.swift; sourceTree = "<group>"; };
+		458F5335CED82E01B16AFC5D /* GenSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenSpec.swift; sourceTree = "<group>"; };
+		4BFF22D48110576C993E9E22 /* PromptTemplates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptTemplates.swift; sourceTree = "<group>"; };
+		4D74C5F494B330F576822FF5 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		4EA6AC7A9E1111D84C0397EB /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		518CE85292AA1BB38184C31D /* UserIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentity.swift; sourceTree = "<group>"; };
+		519853EB63259FDDD73CBF35 /* SharedSettingsReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedSettingsReader.swift; sourceTree = "<group>"; };
+		642B6BD36F353F13B02C6165 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		66F6FE70C39149E2D5FD4F47 /* ClipboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardService.swift; sourceTree = "<group>"; };
+		6EDC60489A1F17C3CCB6DDCA /* SlotTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotTabsView.swift; sourceTree = "<group>"; };
+		70A9C7A07F4C147EA79F3EB4 /* CandidateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListView.swift; sourceTree = "<group>"; };
+		7AD5AE4D9E24EC17449F094B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7F05D949858AF7867E86F7A1 /* AppGroupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupStore.swift; sourceTree = "<group>"; };
+		82FD4C5E55A338ABC6A7526D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		879CBC8DC3393B4DACAFC5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E471916FFA8B32654D74AC1 /* Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
+		A3A3C5D9A8D45BE6C0362D8F /* StyleProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleProfile.swift; sourceTree = "<group>"; };
+		A674A33DBB8BD8904548A20E /* CompactCandidateCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactCandidateCardView.swift; sourceTree = "<group>"; };
+		A91C2BE1A3A70903A2E46E5B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B20988F655E12FAB92CC9BAC /* PermissionGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionGuideViewController.swift; sourceTree = "<group>"; };
+		B6BCE9A6BED3276A7D1C4324 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B76D9A90C02B674EECB93A36 /* TextUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUtils.swift; sourceTree = "<group>"; };
+		BA70E1BB1FB07A85A13BC685 /* PromptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptEngine.swift; sourceTree = "<group>"; };
+		CC38E7E23FA1106F7352240E /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		D3F6F663DCA31F1E3C1709AE /* TopActionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopActionBarView.swift; sourceTree = "<group>"; };
+		D9EB347D24B907D7A978D8BB /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		E08A8BE65C1CF196DA16DF98 /* PolishCompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolishCompareView.swift; sourceTree = "<group>"; };
+		E52DDC0E4C18169E8124F669 /* ForloveKeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForloveKeyboardExtension.entitlements; sourceTree = "<group>"; };
+		E6C1FAAE23077C2991651661 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
+		E7D96982350E552EEA9728D2 /* KeyboardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardState.swift; sourceTree = "<group>"; };
+		E7E2CB9334CD218738DB563D /* FullAccessChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAccessChecker.swift; sourceTree = "<group>"; };
+		E84E99525B9175FD0F561520 /* ForloveHostApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForloveHostApp.entitlements; sourceTree = "<group>"; };
+		E9B99A4AB7BD9CDEF4E30674 /* CategorySlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySlot.swift; sourceTree = "<group>"; };
+		EB5D45291394949C4DE8412D /* ForloveKeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ForloveKeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA65C36442F735CC36C164B /* SceneTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTabsView.swift; sourceTree = "<group>"; };
+		F0882DCC5718190D901CBDEC /* QuickToolsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickToolsRowView.swift; sourceTree = "<group>"; };
+		F2BA9567CEA5BAB2E586B96D /* KeyboardStatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStatusCardView.swift; sourceTree = "<group>"; };
+		ABCD5678E1234F90ABCDEF34 /* SubCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryGridView.swift; sourceTree = "<group>"; };
+		F7825F3E3701636799EC0CFD /* SafetyRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyRules.swift; sourceTree = "<group>"; };
+		FF84903B533CDC517E96A01E /* ExtensionNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionNetworkClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02901392260B952124B4E286 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				E7D96982350E552EEA9728D2 /* KeyboardState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		0F4B45FC3A7317251499EA98 /* Prompting */ = {
+			isa = PBXGroup;
+			children = (
+				028F6F64652B029D7E090F24 /* PromptBuilder.swift */,
+				BA70E1BB1FB07A85A13BC685 /* PromptEngine.swift */,
+				4BFF22D48110576C993E9E22 /* PromptTemplates.swift */,
+				F7825F3E3701636799EC0CFD /* SafetyRules.swift */,
+			);
+			path = Prompting;
+			sourceTree = "<group>";
+		};
+		15A6B9D558F53FA95697207F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A91C2BE1A3A70903A2E46E5B /* OnboardingViewController.swift */,
+				B20988F655E12FAB92CC9BAC /* PermissionGuideViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		31A7D661E802AD78DBE0D00B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66F6FE70C39149E2D5FD4F47 /* ClipboardService.swift */,
+				FF84903B533CDC517E96A01E /* ExtensionNetworkClient.swift */,
+				E7E2CB9334CD218738DB563D /* FullAccessChecker.swift */,
+				519853EB63259FDDD73CBF35 /* SharedSettingsReader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		375511FCEB754E80741FE124 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				183F53D68B4E84B72BDA5792 /* StyleSettingsViewController.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		3E778066625CC19EDD177248 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				31F0B4A262D410B5D4CAB0D2 /* CandidateCardView.swift */,
+				70A9C7A07F4C147EA79F3EB4 /* CandidateListView.swift */,
+				A674A33DBB8BD8904548A20E /* CompactCandidateCardView.swift */,
+				B6BCE9A6BED3276A7D1C4324 /* EmptyStateView.swift */,
+				05F3BAD2C4E84DD867FC1B04 /* KeyboardRootView.swift */,
+				E08A8BE65C1CF196DA16DF98 /* PolishCompareView.swift */,
+				F0882DCC5718190D901CBDEC /* QuickToolsRowView.swift */,
+				EBA65C36442F735CC36C164B /* SceneTabsView.swift */,
+				6EDC60489A1F17C3CCB6DDCA /* SlotTabsView.swift */,
+				ABCD5678E1234F90ABCDEF34 /* SubCategoryGridView.swift */,
+				D3F6F663DCA31F1E3C1709AE /* TopActionBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		449FCA56FE5FAFB03411B74C /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				340DA3BA7EA3AABF168724F1 /* IdentitySettingsViewController.swift */,
+			);
+			path = Identity;
+			sourceTree = "<group>";
+		};
+		694C5C87B010FD7DD01E894F /* ForloveKeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E52DDC0E4C18169E8124F669 /* ForloveKeyboardExtension.entitlements */,
+				82FD4C5E55A338ABC6A7526D /* Info.plist */,
+				D9EB347D24B907D7A978D8BB /* KeyboardViewController.swift */,
+				31A7D661E802AD78DBE0D00B /* Services */,
+				02901392260B952124B4E286 /* State */,
+				3E778066625CC19EDD177248 /* Views */,
+			);
+			path = ForloveKeyboardExtension;
+			sourceTree = "<group>";
+		};
+		6A3B5B6B7388290B51412968 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6AC7A9E1111D84C0397EB /* Candidate.swift */,
+				E9B99A4AB7BD9CDEF4E30674 /* CategorySlot.swift */,
+				458F5335CED82E01B16AFC5D /* GenSpec.swift */,
+				A3A3C5D9A8D45BE6C0362D8F /* StyleProfile.swift */,
+				518CE85292AA1BB38184C31D /* UserIdentity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72F62EEED99CA849BF1C6A5B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				4D74C5F494B330F576822FF5 /* DesignSystem.swift */,
+				1F04B2235EF4DF888D82D2F4 /* FeatureFlags.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		91FD54993463227347FED4F3 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				7F05D949858AF7867E86F7A1 /* AppGroupStore.swift */,
+				642B6BD36F353F13B02C6165 /* Keys.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		99100B0E8A2D67D9F8433002 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E6C1FAAE23077C2991651661 /* PermissionService.swift */,
+				CC38E7E23FA1106F7352240E /* SettingsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE4C944702785163C893F74B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17B3DBCF0878BED27327A740 /* ForloveHostApp.app */,
+				EB5D45291394949C4DE8412D /* ForloveKeyboardExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7025C5C29D51C5C55962ABB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5AE4D9E24EC17449F094B /* HomeViewController.swift */,
+				F2BA9567CEA5BAB2E586B96D /* KeyboardStatusCardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C7A33121DD662D09145006F4 = {
+			isa = PBXGroup;
+			children = (
+				DCF17F4177E0CAF4B47A7E1F /* ForloveHostApp */,
+				694C5C87B010FD7DD01E894F /* ForloveKeyboardExtension */,
+				E08D8D71B2EEBAA820695794 /* SharedKit */,
+				BE4C944702785163C893F74B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCF17F4177E0CAF4B47A7E1F /* ForloveHostApp */ = {
+			isa = PBXGroup;
+			children = (
+				1FC22F3668EAB86BC2BD6A76 /* AppDelegate.swift */,
+				19AA40C106B3953C129C6755 /* Assets.xcassets */,
+				E84E99525B9175FD0F561520 /* ForloveHostApp.entitlements */,
+				879CBC8DC3393B4DACAFC5E2 /* Info.plist */,
+				EDB7B6F91B5C02B017FFDD97 /* Scenes */,
+				99100B0E8A2D67D9F8433002 /* Services */,
+			);
+			path = ForloveHostApp;
+			sourceTree = "<group>";
+		};
+		DF188DDAB35146BA115995DD /* SlotConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				44B402F1CE139EF186204C69 /* SlotConfigurationViewController.swift */,
+				DEF56789ABCD2345EF012345 /* SlotEditViewControllerV2.swift */,
+			);
+			path = SlotConfiguration;
+			sourceTree = "<group>";
+		};
+		E08D8D71B2EEBAA820695794 /* SharedKit */ = {
+			isa = PBXGroup;
+			children = (
+				72F62EEED99CA849BF1C6A5B /* Config */,
+				6A3B5B6B7388290B51412968 /* Models */,
+				0F4B45FC3A7317251499EA98 /* Prompting */,
+				91FD54993463227347FED4F3 /* Storage */,
+				EA8A7816101D3F9BACF89B8D /* Utils */,
+			);
+			path = SharedKit;
+			sourceTree = "<group>";
+		};
+		EA8A7816101D3F9BACF89B8D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E471916FFA8B32654D74AC1 /* Debounce.swift */,
+				B76D9A90C02B674EECB93A36 /* TextUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EDB7B6F91B5C02B017FFDD97 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C7025C5C29D51C5C55962ABB /* Home */,
+				449FCA56FE5FAFB03411B74C /* Identity */,
+				15A6B9D558F53FA95697207F /* Onboarding */,
+				DF188DDAB35146BA115995DD /* SlotConfiguration */,
+				375511FCEB754E80741FE124 /* Style */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C70AEE22C21A7F229A7AEF65 /* ForloveKeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 488DF54100F5DAB2D6C1EF3E /* Build configuration list for PBXNativeTarget "ForloveKeyboardExtension" */;
+			buildPhases = (
+				8FEAF4CCDA88060E98D2D03A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForloveKeyboardExtension;
+			packageProductDependencies = (
+			);
+			productName = ForloveKeyboardExtension;
+			productReference = EB5D45291394949C4DE8412D /* ForloveKeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D2BA8196658BEE32BFC8035F /* ForloveHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD4F4E21238B8458E838BCB /* Build configuration list for PBXNativeTarget "ForloveHostApp" */;
+			buildPhases = (
+				E7E6196623266580D9FF3997 /* Sources */,
+				19C1154EF8A91B76473610AB /* Resources */,
+				A64BEDA21F44830D43528631 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E096B3EB86FD5253B5EF042F /* PBXTargetDependency */,
+			);
+			name = ForloveHostApp;
+			packageProductDependencies = (
+			);
+			productName = ForloveHostApp;
+			productReference = 17B3DBCF0878BED27327A740 /* ForloveHostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00AC51314B2F95BF71E35B45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 73C737305BA6E327BB9FBDDF /* Build configuration list for PBXProject "ForloveKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C7A33121DD662D09145006F4;
+			minimizedProjectReferenceProxies = 1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2BA8196658BEE32BFC8035F /* ForloveHostApp */,
+				C70AEE22C21A7F229A7AEF65 /* ForloveKeyboardExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19C1154EF8A91B76473610AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364E67370609CD43637F4723 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FEAF4CCDA88060E98D2D03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24681A74B32630F93F641751 /* AppGroupStore.swift in Sources */,
+				9DCD77DFDB382A738E59C7D4 /* Candidate.swift in Sources */,
+				EF1D51017E16CE68D7E8B56A /* CandidateCardView.swift in Sources */,
+				131E2465086AD520739CEFF5 /* CandidateListView.swift in Sources */,
+				9FFE7FC314DE3167D01EE54C /* CategorySlot.swift in Sources */,
+				538432F2C9B190003CD0AE90 /* ClipboardService.swift in Sources */,
+				8BE0630C3814A09369039A04 /* CompactCandidateCardView.swift in Sources */,
+				66C761FF979D95EF25D66928 /* Debounce.swift in Sources */,
+				7DF54C8530F7329C750D1A31 /* DesignSystem.swift in Sources */,
+				4CCB3FAA4559FAC9F319734A /* EmptyStateView.swift in Sources */,
+				8517FA5A14B19F053EF5DCDC /* ExtensionNetworkClient.swift in Sources */,
+				671C7A35564B0FC1E025C162 /* FeatureFlags.swift in Sources */,
+				932B823B89A9DF73DDC31F7B /* FullAccessChecker.swift in Sources */,
+				1835D634949769D200CE5237 /* GenSpec.swift in Sources */,
+				F70EC66849C1C2C930261C8A /* KeyboardRootView.swift in Sources */,
+				32D3AB51984F26CECF0207B3 /* KeyboardState.swift in Sources */,
+				AEC6B4EFA82E7DD0350B18C5 /* KeyboardViewController.swift in Sources */,
+				F1AA0DE1C26B9BEDEA9A00C2 /* Keys.swift in Sources */,
+				C347FDCEDA146FD534BA8498 /* PolishCompareView.swift in Sources */,
+				36935C43DF0C1EF593C42A04 /* PromptBuilder.swift in Sources */,
+				44AD81BD7A45FC97EFB125AB /* PromptEngine.swift in Sources */,
+				B8F4443CCA5AFCAC77C6380C /* PromptTemplates.swift in Sources */,
+				17093EC3D51D9C576CA75C1B /* QuickToolsRowView.swift in Sources */,
+				9925BEB174D4B38853C76EB7 /* SafetyRules.swift in Sources */,
+				5DFAD88F8A2ECB0ED5EF5891 /* SceneTabsView.swift in Sources */,
+				3849185662E0DC18ABF46003 /* SharedSettingsReader.swift in Sources */,
+				12832548E756BA58BD61F340 /* SlotTabsView.swift in Sources */,
+				F8CECA4563DBBCEB8A889AAF /* StyleProfile.swift in Sources */,
+				D86F9E7181E95E75BF2CDE0C /* TextUtils.swift in Sources */,
+				ED0BC581E1C351DC6A55BDDF /* TopActionBarView.swift in Sources */,
+				ABCD1234E5678F90ABCDEF12 /* SubCategoryGridView.swift in Sources */,
+				64A0AC4AF5501F74DCD38CF1 /* UserIdentity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7E6196623266580D9FF3997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E03C03449CB58AAE38C3D77C /* AppDelegate.swift in Sources */,
+				B28D3C3A2B70D6D819DC79C0 /* AppGroupStore.swift in Sources */,
+				FE7891DCB8315F246767D426 /* Candidate.swift in Sources */,
+				54BD41531E960DEFA86492E1 /* CategorySlot.swift in Sources */,
+				1554EDC926E8762BA89F2016 /* Debounce.swift in Sources */,
+				695D2DBBA6145D9D7E8C92B1 /* DesignSystem.swift in Sources */,
+				B13DD2E320C33CCD318C942B /* FeatureFlags.swift in Sources */,
+				D8ECE7DA9F38A0187ECE2D19 /* GenSpec.swift in Sources */,
+				1238DF8EE3366C0CB807AB20 /* HomeViewController.swift in Sources */,
+				1DEA386A6C601CA3733D5134 /* IdentitySettingsViewController.swift in Sources */,
+				4CA74943C65AECE38CED1279 /* KeyboardStatusCardView.swift in Sources */,
+				B3A0980BF88E950BC3DCC884 /* Keys.swift in Sources */,
+				FF61429EFBFE12062DDABFAA /* OnboardingViewController.swift in Sources */,
+				EA4AF90800FD080124D3CB8E /* PermissionGuideViewController.swift in Sources */,
+				5F132DDE2176FAA49B6484B5 /* PermissionService.swift in Sources */,
+				7C9F255666D7A7D2BA27B017 /* PromptBuilder.swift in Sources */,
+				DD33A1556A61DA58DC88D9AE /* PromptEngine.swift in Sources */,
+				05B30DC34D17DBCE0EEA2E32 /* PromptTemplates.swift in Sources */,
+				4AABE8E277CD6FA9A3D5A2FA /* SafetyRules.swift in Sources */,
+				41ECB15CDB28A1FF18F5BA15 /* SettingsService.swift in Sources */,
+				DBF6BCC443182FCCE6D2801C /* SlotConfigurationViewController.swift in Sources */,
+				DEF45678ABCD1234EF901234 /* SlotEditViewControllerV2.swift in Sources */,
+				400E3D7C0E31B53C33906DD0 /* StyleProfile.swift in Sources */,
+				22E18BF44355EC2C14C9D24D /* StyleSettingsViewController.swift in Sources */,
+				EA65AD34CF2550687B9129D6 /* TextUtils.swift in Sources */,
+				07CEA29DEC0791C7299EDDFB /* UserIdentity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E096B3EB86FD5253B5EF042F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70AEE22C21A7F229A7AEF65 /* ForloveKeyboardExtension */;
+			targetProxy = 820EFF94155219C598F539D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2739B86CFAF8B3D9770757D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ForloveHostApp/ForloveHostApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"ForloveHostApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D48KD2J687;
+				INFOPLIST_FILE = ForloveHostApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forlove.keyboard;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		70433866D11F39C681EBB425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		96E78B6D5366AB34B8BC6795 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E88C0B77821CC3FFFAC730DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ForloveKeyboardExtension/ForloveKeyboardExtension.entitlements;
+				DEVELOPMENT_TEAM = D48KD2J687;
+				INFOPLIST_FILE = ForloveKeyboardExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forlove.keyboard.keyboardextension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2E5BBB51FE038540E5B0DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ForloveKeyboardExtension/ForloveKeyboardExtension.entitlements;
+				DEVELOPMENT_TEAM = D48KD2J687;
+				INFOPLIST_FILE = ForloveKeyboardExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forlove.keyboard.keyboardextension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F82B18F52522597E6B7F43C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ForloveHostApp/ForloveHostApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"ForloveHostApp/Preview Content\"";
+				DEVELOPMENT_TEAM = D48KD2J687;
+				INFOPLIST_FILE = ForloveHostApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forlove.keyboard;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CD4F4E21238B8458E838BCB /* Build configuration list for PBXNativeTarget "ForloveHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82B18F52522597E6B7F43C1 /* Debug */,
+				2739B86CFAF8B3D9770757D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		488DF54100F5DAB2D6C1EF3E /* Build configuration list for PBXNativeTarget "ForloveKeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88C0B77821CC3FFFAC730DC /* Debug */,
+				F2E5BBB51FE038540E5B0DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73C737305BA6E327BB9FBDDF /* Build configuration list for PBXProject "ForloveKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E78B6D5366AB34B8BC6795 /* Debug */,
+				70433866D11F39C681EBB425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00AC51314B2F95BF71E35B45 /* Project object */;
+}
